@@ -22,7 +22,7 @@ jobs: # A basic unit of work in a run
       - run:
           command: |
             . venv/bin/activate
-            nosetests tests/math-test.py
-            coverage run src/*.py
-            coverage report
-            coveralls
+            . nosetests tests/math-test.py
+            . coverage run src/*.py
+            . coverage report
+            . coveralls
